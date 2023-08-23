@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
       routes: {
-        "/": (context) => HomePage(), // Fixed syntax here
+        "/": (context) => HomePage(),
       },
     );
   }

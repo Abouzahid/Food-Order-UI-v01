@@ -159,9 +159,10 @@ class PopularItemsWidget extends StatelessWidget {
                   children: [
                     Container(
                       alignment: Alignment.center,
+                      padding: EdgeInsets.all(5),
                       child: Image.asset(
                         "assets/images/sting.png",
-                        height: 130,
+                        height: 120,
                       ),
                     ),
                     Text("Sting Drink",style: TextStyle(

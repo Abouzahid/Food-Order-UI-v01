@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food_order_v1/Widgets/NewestItemsWidget.dart';
 import 'package:food_order_v1/Widgets/PopularItemsWidget.dart';
 
 import '../Widgets/AppBarWidget.dart';
@@ -68,6 +69,7 @@ class HomePage extends StatelessWidget{
               ),
             ),
           ),
+
          // category
           Padding(padding: EdgeInsets.only(top: 20,left: 10),
             child: Text(
@@ -95,6 +97,21 @@ class HomePage extends StatelessWidget{
 
           //Popular Items Widget
           PopularItemsWidget(),
+
+          //Newest Items
+          Padding(padding: EdgeInsets.only(top: 20,left: 10),
+            child: Text(
+              "Newest",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+
+              ),),
+          ),
+
+          //Newest items widget
+          NewestItemsWidget(),
+
 
         ],
       ),
