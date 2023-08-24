@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_order_v1/Widgets/AppBarWidget.dart';
+import 'package:food_order_v1/Widgets/CartBottomNavBar.dart';
+import 'package:food_order_v1/Widgets/DrawerWiget.dart';
 
 class CartPage extends StatelessWidget {
 
@@ -306,12 +308,133 @@ class CartPage extends StatelessWidget {
                         ],),
                     ),
                   ),
+                  Padding(
+                    padding:
+                    EdgeInsets.symmetric(
+                        vertical: 30,
+                        horizontal: 20),
+                    child: Container(
+                      padding: EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        color:Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 3,
+                            blurRadius: 10,
+                            offset: Offset(0,3),
+                          ),
+                        ],),
+                      child: Column(
+                        children: [
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                            vertical: 10,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Items :",
+                                style: TextStyle(
+                                  fontSize:20 ,
+                                ),
+                              ),
+                              Text(
+                                "10",
+                                style: TextStyle(
+                                  fontSize:20 ,
+                                ),
+                              ),
+                          ],),
+                        ),
+                          Divider(
+                            color: Colors.black,
+                          ),
+                        Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 10,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Sub-Total :",
+                                  style: TextStyle(
+                                    fontSize:20 ,
+                                  ),
+                                ),
+                                Text(
+                                  "\$60",
+                                  style: TextStyle(
+                                    fontSize:20 ,
+                                  ),
+                                ),
+                              ],),
+                          ),
+                          Divider(
+                            color: Colors.black,
+                          ),
+                        Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 10,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Delievery :",
+                                  style: TextStyle(
+                                    fontSize:20 ,
+                                  ),
+                                ),
+                                Text(
+                                  "\$10",
+                                  style: TextStyle(
+                                    fontSize:20 ,
+                                  ),
+                                ),
+                              ],),
+                          ),
+                          Divider(
+                            color: Colors.black,
+                          ),
+                        Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 10,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Total :",
+                                  style: TextStyle(
+                                    fontSize:20 ,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "\$70",
+                                  style: TextStyle(
+                                    fontSize:20 ,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.red,
+                                  ),
+                                ),
+                              ],),
+                          ),
+                      ],),
+                    ),
+                  ),
                 ],
               ),
             ),
           ),
         ],
       ),
+      drawer: DrawerWiget(),
+      bottomNavigationBar: CartBottomNavBar(),
     );
   }
 }
