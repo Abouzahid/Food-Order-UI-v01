@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:food_order_v1/Widgets/DrawerWiget.dart';
+import 'package:food_order_v1/Widgets/DrawerWidget.dart';
 import 'package:food_order_v1/Widgets/NewestItemsWidget.dart';
 import 'package:food_order_v1/Widgets/PopularItemsWidget.dart';
 
@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
+      backgroundColor: Colors.yellow,
       body: ListView(
         children:  [
           // Custom App bar Widget

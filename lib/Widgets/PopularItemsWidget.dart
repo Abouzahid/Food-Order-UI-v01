@@ -107,7 +107,7 @@ class PopularItemsWidget extends StatelessWidget {
                         height: 130,
                       ),
                     ),
-                    Text("Pizza Hot",style: TextStyle(
+                    Text("Pizza",style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
@@ -176,7 +176,7 @@ class PopularItemsWidget extends StatelessWidget {
                     ),
                     ),
                     SizedBox(height: 4,),
-                    Text("Taste Our Drink Sting",style: TextStyle(
+                    Text("Taste Our Cold Sting",style: TextStyle(
                       fontSize: 15,
                       //fontWeight: FontWeight.bold,
                     ),
@@ -228,17 +228,17 @@ class PopularItemsWidget extends StatelessWidget {
                     Container(
                       alignment: Alignment.center,
                       child: Image.asset(
-                        "assets/images/burgeer.jpg",
+                        "assets/images/chicken-wings.jpg",
                         height: 130,
                       ),
                     ),
-                    Text("Hot Burger",style: TextStyle(
+                    Text("Chicken Wings",style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                     ),
                     SizedBox(height: 4,),
-                    Text("Taste Our Hot Burger",style: TextStyle(
+                    Text("Taste Chicken Wings",style: TextStyle(
                       fontSize: 15,
                       //fontWeight: FontWeight.bold,
                     ),
@@ -247,7 +247,7 @@ class PopularItemsWidget extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("\$10",
+                        Text("\$20",
                           style: TextStyle(
                             fontSize: 17,
                             color: Colors.red,

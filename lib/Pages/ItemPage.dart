@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:food_order_v1/Widgets/AppBarWidget.dart';
-import 'package:food_order_v1/Widgets/DrawerWiget.dart';
+import 'package:food_order_v1/Widgets/DrawerWidget.dart';
 import 'package:food_order_v1/Widgets/ItemBottomNavBar.dart';
 class ItemPage extends StatelessWidget {
 
@@ -28,7 +28,7 @@ class ItemPage extends StatelessWidget {
             height: 30,
             child: Container(
               width: double.infinity,
-              color: Colors.white,
+              color: Colors.yellow,
               child:
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),

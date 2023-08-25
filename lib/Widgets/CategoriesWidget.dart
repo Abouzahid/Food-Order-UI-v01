@@ -9,171 +9,52 @@ class CategoriesWidget extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
         child: Row(
           children: [
-            // Create a list of widgets for each image
-            //for (int i = 0; i < 50; i++)
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                child: Container(
-                  padding: EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 2,
-                        blurRadius: 10,
-                        offset: Offset(0, 3),
-                      )
-                    ],
-                  ),
-                  child: Image.asset(
-                    "assets/images/sting.png", // Make sure this path is correct
-                    width: 50,
-                    height: 50,
-                  ),
-                ),
-              ),
-              Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10),
-              child: Container(
-                padding: EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 2,
-                      blurRadius: 10,
-                      offset: Offset(0, 3),
-                    )
-                  ],
-                ),
-                child: Image.asset(
-                  "assets/images/pizza.png", // Make sure this path is correct
-                  width: 50,
-                  height: 50,
-                ),
-              ),
-            ),
-              Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10),
-              child: Container(
-                padding: EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 2,
-                      blurRadius: 10,
-                      offset: Offset(0, 3),
-                    )
-                  ],
-                ),
-                child: Image.asset(
-                  "assets/images/burgeer.jpg", // Make sure this path is correct
-                  width: 50,
-                  height: 50,
-                ),
-              ),
-            ),
-              Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10),
-              child: Container(
-                padding: EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 2,
-                      blurRadius: 10,
-                      offset: Offset(0, 3),
-                    )
-                  ],
-                ),
-                child: Image.asset(
-                  "assets/images/pizza.png", // Make sure this path is correct
-                  width: 50,
-                  height: 50,
-                ),
-              ),
-            ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                child: Container(
-                  padding: EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 2,
-                        blurRadius: 10,
-                        offset: Offset(0, 3),
-                      )
-                    ],
-                  ),
-                  child: Image.asset(
-                    "assets/images/pizza.png", // Make sure this path is correct
-                    width: 50,
-                    height: 50,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                child: Container(
-                  padding: EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 2,
-                        blurRadius: 10,
-                        offset: Offset(0, 3),
-                      )
-                    ],
-                  ),
-                  child: Image.asset(
-                    "assets/images/pizza.png", // Make sure this path is correct
-                    width: 50,
-                    height: 50,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                child: Container(
-                  padding: EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 2,
-                        blurRadius: 10,
-                        offset: Offset(0, 3),
-                      )
-                    ],
-                  ),
-                  child: Image.asset(
-                    "assets/images/pizza.png", // Make sure this path is correct
-                    width: 50,
-                    height: 50,
-                  ),
-                ),
-              ),
+            _buildCategoryItem("assets/images/sting.png", "Drinks"),
+            _buildCategoryItem("assets/images/pizza.png", "Pizza"),
+            _buildCategoryItem("assets/images/burgeer.jpg", "Burger"),
+            _buildCategoryItem("assets/images/hot-dog.jpg", "Hot Dogs"),
+            _buildCategoryItem("assets/images/chicken-wings.jpg", "Chicken Wings"),
+            _buildCategoryItem("assets/images/desserts.jpg", "Desserts"),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildCategoryItem(String imagePath, String categoryName) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 10),
+      child: Column(
+        children: [
+          Container(
+            padding: EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 2,
+                  blurRadius: 10,
+                  offset: Offset(0, 3),
+                ),
+              ],
+            ),
+            child: Image.asset(
+              imagePath,
+              width: 50,
+              height: 50,
+            ),
+          ),
+          SizedBox(height: 5), // Add some space between image and text
+          Text(
+            categoryName,
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
       ),
     );
   }

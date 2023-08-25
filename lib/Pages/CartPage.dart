@@ -2,13 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_order_v1/Widgets/AppBarWidget.dart';
 import 'package:food_order_v1/Widgets/CartBottomNavBar.dart';
-import 'package:food_order_v1/Widgets/DrawerWiget.dart';
+import 'package:food_order_v1/Widgets/DrawerWidget.dart';
 
 class CartPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.yellow,
       body: ListView(
         children: [
           SingleChildScrollView(

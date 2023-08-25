@@ -50,13 +50,13 @@ class NewestItemsWidget extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Text("Hot Pizza",
+                        Text("Pizza",
                         style:TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
                         ) ,
                         ),
-                        Text("Taste Our Hot Pizza, We Provide Our Great Foods",
+                        Text("Taste Our Pizza, We Provide Our Great Foods",
                           style:TextStyle(
                             fontSize: 16,
                             //fontWeight: FontWeight.bold,
@@ -145,13 +145,13 @@ class NewestItemsWidget extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Text("Ice Sting",
+                        Text("Cold Sting",
                           style:TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                           ) ,
                         ),
-                        Text("Taste Our Drink Sting, We Provide Our Great Drinks",
+                        Text("Taste Our Cold Sting, We Provide Our Great Drinks",
                           style:TextStyle(
                             fontSize: 16,
                             //fontWeight: FontWeight.bold,
@@ -246,7 +246,7 @@ class NewestItemsWidget extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ) ,
                         ),
-                        Text("Taste Our Big Burger, We Provide Our Great Foods",
+                        Text("Taste Our Hot Burger, We Provide Our Great Foods",
                           style:TextStyle(
                             fontSize: 16,
                             //fontWeight: FontWeight.bold,
