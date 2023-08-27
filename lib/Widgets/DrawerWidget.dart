@@ -73,10 +73,10 @@ class  DrawerWiget extends StatelessWidget {
             ),
           ),
           GestureDetector(
-            onTap: (){
-              Navigator.pushNamed(context, "cartPage");
-            },
             child: ListTile(
+              onTap: (){
+                Navigator.pushNamed(context, "cartPage");
+              },
               leading: Icon(
                 CupertinoIcons.cart_fill,
                 color: Colors.red,
@@ -104,10 +104,10 @@ class  DrawerWiget extends StatelessWidget {
             ),
           ),
           GestureDetector(
-            onTap: (){
-              Navigator.pushNamed(context, "settingsPage");
-            },
             child: ListTile(
+              onTap: (){
+                Navigator.pushNamed(context, "settingsPage");
+              },
               leading: Icon(
                 CupertinoIcons.settings,
                 color: Colors.red,
@@ -121,16 +121,21 @@ class  DrawerWiget extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
-            leading: Icon(
-              Icons.exit_to_app,
-              color: Colors.red,
-            ),
-            title: Text(
-              "Log Out",
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+          GestureDetector(
+            child: ListTile(
+              onTap: (){
+                Navigator.pushNamed(context, "loginPage");
+              },
+              leading: Icon(
+                Icons.exit_to_app,
+                color: Colors.red,
+              ),
+              title: Text(
+                "Log Out",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
