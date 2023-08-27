@@ -56,9 +56,7 @@ class  DrawerWiget extends StatelessWidget {
           ),
           GestureDetector(
             child: ListTile(
-              onTap: (){
-                Navigator.pushNamed(context, "myAccountPage");
-              },
+
               leading: Icon(
                 CupertinoIcons.person,
                 color: Colors.red,
@@ -113,7 +111,7 @@ class  DrawerWiget extends StatelessWidget {
                 color: Colors.red,
               ),
               title: Text(
-                "Setting",
+                "Settings",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,

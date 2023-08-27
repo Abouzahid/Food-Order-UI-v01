@@ -29,6 +29,7 @@ class ItemPage extends StatelessWidget {
             child: Container(
               width: double.infinity,
               color: Colors.yellow,
+              height: 350,
               child:
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),

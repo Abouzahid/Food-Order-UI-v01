@@ -65,7 +65,7 @@ class HomePage extends StatelessWidget{
                     ),
                   ),
                     Expanded(child: Container()),
-                  Icon(Icons.filter_list),
+
                 ],
                 ),
               ),
